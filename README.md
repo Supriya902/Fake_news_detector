@@ -74,9 +74,9 @@ To improve predictions or test with newer articles (like 2020+), you can manuall
 
 Example:
 
-csv
+```bash
 "Coronavirus pandemic declared by WHO","In March 2020 WHO declared COVID-19 a global pandemic.","health","2020-03-11"
-
+```
 
 > ⚠ After adding new rows, **delete model.pkl and vectorizer.pkl** to retrain the model with updated data.
 
@@ -87,14 +87,14 @@ csv
 *Input:*
 
 * Title: Coronavirus pandemic declared by WHO
- Subject: health
+* Subject: health
 * Content: In March 2020 WHO declared COVID-19 a global pandemic.
 
 *Output:*
 
-
+```bash
 🟢 This news article is likely REAL.
-
+```
 
 ---
 
