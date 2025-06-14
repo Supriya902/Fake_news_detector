@@ -38,8 +38,8 @@ For training, a `label` column (`REAL` or `FAKE`) is added during preprocessing.
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/Supriya902/fake-news-detector.git
-   cd fake-news-detector
+   git clone https://github.com/Supriya902/Fake_news_detector.git
+   cd Fake_news_detector
    ```
 2. **Install dependencies:**
    ```bash
