@@ -8,7 +8,7 @@ This is a simple AI-powered Fake News Detection web app built using **Python**, 
 
 - Takes in **news title**, **text content**, and **subject**
 - Detects whether the news is likely **REAL** or **FAKE**
-- Uses the [ISOT Fake News Dataset](https://www.uvic.ca/engineering/ece/isot/datasets/fake-news/index.php)
+- Uses the [ISOT Fake News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
 - Provides a sample of the training data
 - Simple and interactive **Streamlit UI**
 
@@ -38,5 +38,65 @@ For training, a `label` column (`REAL` or `FAKE`) is added during preprocessing.
 
 1. **Clone the repo:**
    ```bash
-   git clone https://github.com/yourusername/fake-news-detector.git
+   git clone https://github.com/Supriya902/Fake_news_detector.git
    cd fake-news-detector
+## ▶ Running the App
+
+bash
+streamlit run app.py
+
+
+Once running, the app will:
+
+* Load and preprocess the dataset
+* Train a logistic regression model (if not already trained)
+* Launch the Streamlit UI in your browser
+
+---
+
+## 📅 Adding More News
+To improve predictions or test with newer articles (like 2020+), you can manually add rows to:
+
+* True.csv – For real news
+* Fake.csv – For fake news
+
+Example:
+
+csv
+"Coronavirus pandemic declared by WHO","In March 2020 WHO declared COVID-19 a global pandemic.","health","2020-03-11"
+
+
+> ⚠ After adding new rows, **delete model.pkl and vectorizer.pkl** to retrain the model with updated data.
+
+---
+
+## 🧪 Example Prediction
+
+*Input:*
+
+* Title: Coronavirus pandemic declared by WHO
+ Subject: health
+* Content: In March 2020 WHO declared COVID-19 a global pandemic.
+
+*Output:*
+
+
+🟢 This news article is likely REAL.
+
+
+---
+
+## 📚 Requirements
+
+* Python 3.8+
+* streamlit
+* pandas
+* scikit-learn
+* pickle
+
+---
+
+## 📌 Credits
+
+* Dataset: [ISOT Fake News Dataset](https://www.kaggle.com/datasets/clmentbisaillon/fake-and-real-news-dataset)
+* App developed using [Streamlit](https://streamlit.io/)
