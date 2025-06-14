@@ -39,10 +39,20 @@ For training, a `label` column (`REAL` or `FAKE`) is added during preprocessing.
 1. **Clone the repo:**
    ```bash
    git clone https://github.com/Supriya902/Fake_news_detector.git
-   cd fake-news-detector
+   cd Fake_news_detector
+2. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+3. **Place Dataset:**
+   Ensure True.csv and Fake.csv are located inside an archive/ folder like:
+   ```bash
+Fake_news_detector/
+├── archive/
+│   ├── True.csv
+│   └── Fake.csv
 ## ▶ Running the App
 
-bash
+```bash
 streamlit run app.py
 
 
